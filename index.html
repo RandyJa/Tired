@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Animation</title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #Gairbear{
+            position: absolute;
+            top: 450px;
+            right: 10px;
+            animation: bird 12s 0s infinite;
+        }
+
+        body{
+            background-image: url("https://preview.redd.it/eegi1a34fw121.png?auto=webp&s=986c668932057ad6a88302081b77914e7ccf627a");
+            background-repeat: no-repeat;
+            background-size: 51%;
+        }
+
+        .thing{
+            position: absolute;
+            right: 53%;
+            top: 50%;
+            background-image: url("https://miro.medium.com/max/1200/1*tTRxvnxhVMNxE3NhBAhp5Q.png");
+            height: 300px;
+            width: 300px;
+            animation: Dog 5s steps(10) 0s infinite;
+        }
+
+        .two{
+            position: relative;
+            background-image: url("https://cdna.artstation.com/p/assets/images/images/022/357/326/large/mikhail-selnihin-full-day-out-light-x4.jpg?1575137410");
+            background-size: 100%;
+            height: 753px;
+            width:766px;
+            left: 770px;
+        }
+
+        .tho{
+            background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/68d24bf4-f7e1-4ae6-8566-409d82925660/dbbnr8m-30e4d12d-9fe6-4a6b-8a9f-e632b57a0566.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY4ZDI0YmY0LWY3ZTEtNGFlNi04NTY2LTQwOWQ4MjkyNTY2MFwvZGJibnI4bS0zMGU0ZDEyZC05ZmU2LTRhNmItOGE5Zi1lNjMyYjU3YTA1NjYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.N3L9RU-0MqwOGqSjQq2XRVokRm5N9boQ7GCHxEZk3K4");
+            animation: Walk 1s linear 0s infinite;
+        }
+
+        .banner{
+            position: absolute;
+            right: 27%;
+            bottom: 60%;
+            height: 150px;
+            width: 700px;
+            border-radius: 20px;
+            background-color: rgb(255, 80, 21);
+        }
+
+        h1{
+            position: absolute;
+            font-family: 'VT323', monospace;
+            color: white;
+            font-size: 130px;
+            left: 205px;
+            top: 8px;
+        }
+
+        .gro{
+            position: absolute;
+            z-index: 1;
+            background: url("https://img.itch.zone/aW1hZ2UvNDQxMTk5LzIyMTkyMTguZ2lm/original/3ooRmV.gif");
+            height: 55px;
+            width: 55px;
+        }
+
+        @keyframes Dog{
+            0% {background-position: 0px;}
+            100% {background-position: 3000px;}
+        }
+
+        @keyframes Walk{
+            0% {transform: translateX(-500px);}
+            100% {transform: translateX(1600px);}
+        }
+
+        @keyframes bird{
+            0% {right: 10px; top: 100px;}
+            100% {Right:670px; top: 600px;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="thing"></div>
+        <div class="two"></div>
+        <div class="banner">
+            <h1>Tired?</h1>
+        </div>
+    </div>
+
+    <img id="Gairbear" src="https://img.itch.zone/aW1hZ2UvNDQxMTk5LzIyMTkyMTguZ2lm/original/3ooRmV.gif" height="100px" width="100px">
+    
+    <div class="tho"></div>
+    
+</body>
+</html>
